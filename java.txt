@@ -1,0 +1,43 @@
+
+    class addition {
+    public void add(int a,int b){
+        System.out.println("addition is"+(a+b));
+    }       
+    
+}
+
+     class subtraction extends addition{
+     public void sub(int a,int b){
+        System.out.println("subtraction is"+(a-b));
+    }  
+    
+}
+
+public class multiplication extends subtraction{
+    public void multiply(int a,int b){
+        System.out.println("multiplication is"+(a*b));
+    }  
+    
+}
+
+public class divition extends multiplication{
+    public void div(int a,int b){
+        System.out.println("divition is"+(a/b));
+    }  
+    public void CallAllMethods()
+    {
+        add(3,2);
+        multiply(4,5);
+        div(4,2);
+        sub(4,1);
+    }
+            
+}
+
+public class calculation extends divition{
+    public static void main(String[] args) {
+        divition d = new divition();
+        d.CallAllMethods();
+    }
+    
+}
