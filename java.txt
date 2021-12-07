@@ -1,28 +1,28 @@
 
-    class addition {
+    class addition1 {
     public void add(int a,int b){
-        System.out.println("addition is"+(a+b));
+        System.out.println("addition1 is"+(a+b));
     }       
     
 }
 
-     class subtraction extends addition{
+     class subtraction1 extends addition1{
      public void sub(int a,int b){
-        System.out.println("subtraction is"+(a-b));
+        System.out.println("subtraction1 is"+(a-b));
     }  
     
 }
 
-public class multiplication extends subtraction{
+public class multiplication1 extends subtraction1{
     public void multiply(int a,int b){
-        System.out.println("multiplication is"+(a*b));
+        System.out.println("multiplication1 is"+(a*b));
     }  
     
 }
 
-public class divition extends multiplication{
+public class divition1 extends multiplication1{
     public void div(int a,int b){
-        System.out.println("divition is"+(a/b));
+        System.out.println("divition1 is"+(a/b));
     }  
     public void CallAllMethods()
     {
@@ -34,7 +34,7 @@ public class divition extends multiplication{
             
 }
 
-public class calculation extends divition{
+public class calculation extends divition5{
     public static void main(String[] args) {
         divition d = new divition();
         d.CallAllMethods();
